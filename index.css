@@ -226,20 +226,22 @@ svg {
 }
 */
 
+@keyframes carmoving_horizontal {
+	0% {transform :translateX(0px);}
+	40% {transform : translateX(1100PX);}
+	45% {transform : translateX(1100px),rotate(45deg);}
+	45% {transform : translateX(1100px),rotate(90deg);}
+    50% {transform : translateY(350PX);}    
 
-
-@keyframes carrotating {
-	0% {transform :rotate(-10deg);}
-	30%{transform: rotate(-45deg);}
-	
-	100% {transform :  rotate(-90deg);}
 }
 
-#car {
-  transform:translate(30);
-  transform-origin:center center;  
-  animation :carrotating 5s forwards;
 
+
+
+#car {
+  transform:translateX(0px);
+  transform-origin:center center;  
+  animation: carmoving_horizontal 5s forwards;
 }
 
 
@@ -250,7 +252,7 @@ svg {
 
 .secondsvg #mypath {
     stroke: yellow;
-    stroke-width:1;
+    stroke-width: .5;
 
     fill:url(#grad);
 }
