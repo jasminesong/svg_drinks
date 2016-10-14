@@ -100,7 +100,7 @@ svg {
 }*/
 
 
-@keyframes manskiing {
+/*@keyframes manskiing {
 	from { transform : translate(1200px,300px); }
 	to { transform:translate(900px,400px); }
 }
@@ -224,7 +224,7 @@ svg {
 #gymman2{
 	animation:gymmove 10s steps(4,end) forwards;
 }
-
+*/
 
 
 
@@ -239,4 +239,36 @@ svg {
   transform:translate(30);
   transform-origin:center center;  
   animation :carrotating 5s forwards;
+
+}
+
+
+.secondsvg{
+	background-color:yellow;
+}
+
+
+.secondsvg #mypath {
+    stroke: yellow;
+    stroke-width:1;
+
+    fill:url(#grad);
+}
+
+.color-transparent {
+    stop-color:transparent;
+   	stop-opacity:1
+}
+
+.color-purple {
+    stop-color:#B05BE0;
+    stop-opacity:1
+}
+
+
+
+
+
+
+
 

@@ -578,6 +578,7 @@
         var $path = $(path);
         data.svg.append($path);
         $path.attr(_getAttributes(data, data.paths[i]));
+        $path.attr("class","woman");
         return path;
     };
 
