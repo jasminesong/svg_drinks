@@ -229,10 +229,6 @@ svg {
 @keyframes carmoving_horizontal {
 	0% {transform :translateX(0px);}
 	40% {transform : translateX(1100PX);}
-	45% {transform : translateX(1100px),rotate(45deg);}
-	45% {transform : translateX(1100px),rotate(90deg);}
-    50% {transform : translateY(350PX);}    
-
 }
 
 
@@ -268,9 +264,13 @@ svg {
 }
 
 
+#road01,#road02{
+  transform :scale(0.22);
+}
 
-
-
+#road03,#road04{
+	transform:scale(.22);
+}
 
 
 

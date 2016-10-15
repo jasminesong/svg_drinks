@@ -47,7 +47,7 @@ var pathObj = {
  */ 
  
  $(document).ready(function(){ 
-
+console.log('begin');
 
  $('#people').lazylinepainter( 
  {
@@ -94,6 +94,8 @@ function setProgress (percentage) {
 }
 
 var x = 0;
+
+
 $('#btn').on('click',function(){
     var timer = setInterval(function(){ 
                           setProgress(x);
@@ -105,6 +107,141 @@ $('#btn').on('click',function(){
                           },50);
 
  });
+
+
+
+//pave road
+function paveRoad1(x){
+    var g = document.createElementNS("http://www.w3.org/2000/svg", 'g');
+    var path =  document.createElementNS("http://www.w3.org/2000/svg","path");
+    path.setAttribute('d',"M260.025,12.072h-27.283V0h-75.16v492.768h75.16v-12.071h27.283v12.071h75.159V0h-75.159V12.072z M260.025,428.627    h-27.283v-52.069h27.283V428.627z M260.025,324.488h-27.283v-52.069h27.283V324.488z M260.025,220.35h-27.283v-52.07h27.283    V220.35z M260.025,116.211h-27.283v-52.07h27.283V116.211z");
+    path.setAttribute('fill',"#71788f");
+    var rect1 = document.createElementNS("http://www.w3.org/2000/svg","rect");
+    rect1.setAttribute('x','107.092');
+    rect1.setAttribute('width','31.478');
+    rect1.setAttribute('fill','#71788f');
+    rect1.setAttribute('height','492.768');
+
+    var rect2 = document.createElementNS("http://www.w3.org/2000/svg","rect");
+    rect2.setAttribute('x','354.196');
+    rect2.setAttribute('width','31.478');
+    rect2.setAttribute('fill','#71788f');
+    rect2.setAttribute('height','492.768');
+    g.appendChild(path);
+    g.appendChild(rect1);
+    g.appendChild(rect2);
+    g.setAttribute('transform','translate(1300,'+x+')');
+    document.getElementById('road01').appendChild(g);
+ }
+
+ function paveRoad2(x){
+    var g = document.createElementNS("http://www.w3.org/2000/svg", 'g');
+    var path =  document.createElementNS("http://www.w3.org/2000/svg","path");
+    path.setAttribute('d',"M260.025,12.072h-27.283V0h-75.16v492.768h75.16v-12.071h27.283v12.071h75.159V0h-75.159V12.072z M260.025,428.627    h-27.283v-52.069h27.283V428.627z M260.025,324.488h-27.283v-52.069h27.283V324.488z M260.025,220.35h-27.283v-52.07h27.283    V220.35z M260.025,116.211h-27.283v-52.07h27.283V116.211z");
+    path.setAttribute('fill',"#71788f");
+    var rect1 = document.createElementNS("http://www.w3.org/2000/svg","rect");
+    rect1.setAttribute('x','107.092');
+    rect1.setAttribute('width','31.478');
+    rect1.setAttribute('fill','#71788f');
+    rect1.setAttribute('height','492.768');
+
+    var rect2 = document.createElementNS("http://www.w3.org/2000/svg","rect");
+    rect2.setAttribute('x','354.196');
+    rect2.setAttribute('width','31.478');
+    rect2.setAttribute('fill','#71788f');
+    rect2.setAttribute('height','492.768');
+    g.appendChild(path);
+    g.appendChild(rect1);
+    g.appendChild(rect2);
+    g.setAttribute('transform','translate(5300,'+x+')');
+    document.getElementById('road02').appendChild(g);
+ }
+
+
+function paveRoad3(y){
+    var g = document.createElementNS("http://www.w3.org/2000/svg", 'g');
+    var path =  document.createElementNS("http://www.w3.org/2000/svg","path");
+    path.setAttribute('d',"M260.025,12.072h-27.283V0h-75.16v492.768h75.16v-12.071h27.283v12.071h75.159V0h-75.159V12.072z M260.025,428.627    h-27.283v-52.069h27.283V428.627z M260.025,324.488h-27.283v-52.069h27.283V324.488z M260.025,220.35h-27.283v-52.07h27.283    V220.35z M260.025,116.211h-27.283v-52.07h27.283V116.211z");
+    path.setAttribute('fill',"#71788f");
+    var rect1 = document.createElementNS("http://www.w3.org/2000/svg","rect");
+    rect1.setAttribute('x','107.092');
+    rect1.setAttribute('width','31.478');
+    rect1.setAttribute('fill','#71788f');
+    rect1.setAttribute('height','492.768');
+
+    var rect2 = document.createElementNS("http://www.w3.org/2000/svg","rect");
+    rect2.setAttribute('x','354.196');
+    rect2.setAttribute('width','31.478');
+    rect2.setAttribute('fill','#71788f');
+    rect2.setAttribute('height','492.768');
+    g.appendChild(path);
+    g.appendChild(rect1);
+    g.appendChild(rect2);
+    g.setAttribute('transform','translate('+y+',500) rotate(90)');
+    document.getElementById('road03').appendChild(g);
+ }
+
+function paveRoad4(y){
+    var g = document.createElementNS("http://www.w3.org/2000/svg", 'g');
+    var path =  document.createElementNS("http://www.w3.org/2000/svg","path");
+    path.setAttribute('d',"M260.025,12.072h-27.283V0h-75.16v492.768h75.16v-12.071h27.283v12.071h75.159V0h-75.159V12.072z M260.025,428.627    h-27.283v-52.069h27.283V428.627z M260.025,324.488h-27.283v-52.069h27.283V324.488z M260.025,220.35h-27.283v-52.07h27.283    V220.35z M260.025,116.211h-27.283v-52.07h27.283V116.211z");
+    path.setAttribute('fill',"#71788f");
+    var rect1 = document.createElementNS("http://www.w3.org/2000/svg","rect");
+    rect1.setAttribute('x','107.092');
+    rect1.setAttribute('width','31.478');
+    rect1.setAttribute('fill','#71788f');
+    rect1.setAttribute('height','492.768');
+
+    var rect2 = document.createElementNS("http://www.w3.org/2000/svg","rect");
+    rect2.setAttribute('x','354.196');
+    rect2.setAttribute('width','31.478');
+    rect2.setAttribute('fill','#71788f');
+    rect2.setAttribute('height','492.768');
+    g.appendChild(path);
+    g.appendChild(rect1);
+    g.appendChild(rect2);
+    g.setAttribute('transform','translate('+y+',2600) rotate(90)');
+    document.getElementById('road04').appendChild(g);
+ }
+
+
+$('#btn3').on('click',function(){
+  
+        console.log('click btn3');
+        var x = 0;
+        var timer = setInterval(function(){
+            if(x >= 10000){
+                clearInterval(timer);
+            }
+            paveRoad1(x);
+            paveRoad2(x);
+            paveRoad3(x);
+            paveRoad4(x);
+            x = x + 492.768;
+
+        },30);
+        
 });
+
+
+
+
+
+
+
+
+
+});
+
+
+//pave road 
+// $('#btn2').on('click',function(){
+//     var timer = setInterval(function(){
+//         paveRoad(distance);
+//     },50);
+// });
+
+
+
 
 
