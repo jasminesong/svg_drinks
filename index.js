@@ -49,7 +49,26 @@ var pathObj = {
  $(document).ready(function(){ 
 console.log('begin');
 
+//glasses occurance
+//add class'appear' to let them become visible and start animation
+function addGlass(elem){
+      elem.attr('class','appear');
+}
+addGlass($('#glass00'));
+setTimeout(addGlass,120,$('#glass01'));
+setTimeout(addGlass,240,$('#glass02'));
+setTimeout(addGlass,360,$('#glass03'));
+setTimeout(addGlass,480,$('#glass04'));
+setTimeout(addGlass,600,$('#glass05'));
+setTimeout(addGlass,720,$('#glass06'));
+setTimeout(addGlass,840,$('#glass07'));
+setTimeout(addGlass,960,$('#glass08'));
+setTimeout(addGlass,1080,$('#glass09'));
 
+
+
+
+//paint line
 $('#btn4').on('click',function(){
     $('#people').lazylinepainter( 
  {
@@ -114,10 +133,6 @@ $('#btn').on('click',function(){
 });   //end of btn4 paint
 
  
-
-
-
-
 //pave road
 function paveRoad1(x){
     var g = document.createElementNS("http://www.w3.org/2000/svg", 'g');

@@ -2,16 +2,7 @@
 body {
 	background-color :rgb(179, 224, 255);
 }
-/*
-#glasses{
-	transform :translate(-140,0) scale(.5);
-	transform-origin:center center;
-}*/
 
-/*#roads {
-	transform-origin: center center;
-	transform: scale(.8) translateX(-10);
-}*/
 .juice_disappear {
 	display:none;
 }
@@ -30,209 +21,6 @@ svg {
 }
 
 
-/*#footprint{
-	transform-origin: center center;
-}
-
-
-#left_foot{
-	position: relative;
-	animation:move 2s steps(4,start) 1s forwards;
-}
-
-#right_foot{
-	position:relative;
-	animation:move 2s steps(4,end)  forwards;
-}*/
-
-/*@keyframes gymmove {
-	from { transform: translateX(0px) }
-	to {
-			transform:translateX(300px);
-	}
-}
-@keyframes gymvisibility{
-    6% , 18%, 30%, 42%, 54%, 66%, 78%, 90% {
-		opacity:1;
-    }
-
-    12%,24%,36%,48%,60%，72%，84%，96%，100% {
-    	opacity: 0;
-    }
-}
-
-#first {
-	animation: gymvisibility 10s forwards;
-}
-
-#second{
-	animation: gymvisibility 2s 0.125s forwards;
-}
-
-#third{
-	animation: gymvisibility 2s 0.25s forwards;
-}
-
-#fourth{
-	animation: gymvisibility 2s 0.375s forwards;
-}
-
-#gymman2.active{
-	animation:gymmove 2s steps(4,end) forwards;
-}
-
-@keyframes lastguymove{
-	from { transform: translate(0px,0px) }
-	to { transform:translate(-160px,-300px) }
-}
-#lastguy2.active{
-	animation :lastguymove 1.5s 0.5s forwards;
-
-}
-
-
-@keyframes jumpingman{
-	0% {transform: rotate(0 5 5);} 
-	100% {transform :rotate(-45 5 5);}*/
-	/*40% {transform :rotate(-90 5 5);}
-	60% {transform:rotate(-135 5 5);}
-	100% {transform:rotate(0 5 5);}
-}
-
-/*#jumpingman{
-	animation: jumpingman 5s forwards;
-}
-
-#rect {
-	animation :jumpingman 5s forwards;
-}*/
-
-
-/*@keyframes manskiing {
-	from { transform : translate(1200px,300px); }
-	to { transform:translate(900px,400px); }
-}
-
-#manskiing {
-	animation:manskiing 1s forwards;
-}
-
-@keyframes manjumping {
-	0% {transform :translate(900px,400px)}
-	30%{transform:translate(830px,300px) rotate(-90deg);}
-	
-	100% {transform : translate(680px,550px) rotate(-150deg);}
-}
-
-#jumpingman {
-	animation:manjumping 1.5s forwards;
-}
-
-#jumpingboard {
-	transform :translate(900px,400px);
-}
-
-
-@keyframes lastguy {
-	from {transform :translate(340px,600px);}
-	to{transform : translate(30px,300px);}
-}
-#lastguy {
-	animation: lastguy 1s forwards
-}
-
-
-@keyframes mountainman {
-	from {transform :translate(850px,10px);}
-	to {transform : translate(690px,130px);}
-}
-
-#mountainman {
-	animation:mountainman 1s forwards;
-}
-
-@keyframes musicman{
-	from {}
-	to {}
-}
-
-#musicman{
-
-}
-
-@keyframes horseman {
-    0%{transform : translate(680px,130px);}
-    14%{ transform :translate(640px,150px);}
-	28%{ transform :translate(600px,170px);}
-	42%{ transform :translate(560px,190px);}
-	56%{ transform :translate(520px,210px);}
-	70%{ transform :translate(480px,230px);}
-	84%{ transform :translate(440px,250px);}
-	98%{ transform :translate(400px,260px);}
-	100%{transform :translate(400px,260px);}
-}
-
-#horseman{
-
-	animation: horseman 1s forwards
-}
-
-@keyframes successman {
-	0% {transform:translate(30px,300px);}
-	10%,30%,50%,70%,90% {transform:translate(30px,280px);}
-	20%,40%,60%,80%,100% {transform:translate(30px,300px);}
-}
-
-#successman{
-	animation: successman 4s infinite
-}
-
-
-
-
-
-
-@keyframes gymmove {
-	from { transform: translate(480px,260px) scale(2.3) }
-	to {
-			transform:translate(1100px,300px) scale(2.3);
-	}
-}
-@keyframes gymvisibility{
-    0% {opacity:1; visibility: visible;}
-    1% {opacity:0;visibility:hidden; }
-    24% {opacity:0;visibility:hidden; }
-    25% {opacity:1; visibility: visible;}
-    26% {opacity:0;visibility:hidden;}
-    49% {opacity:0;visibility:hidden; }
-    50% {opacity:1; visibility: visible;}
-    51% {opacity:0;visibility:hidden;}
-    74% {opacity:0;visibility:hidden;}
-    75% {opacity:1; visibility: visible;}
-    76% {opacity:0;visibility:hidden;}
-    100% {opacity:0,visibility:hidden;}
-}
-
-#first {
-	animation: gymvisibility 10s  forwards;
-}
-
-#second{
-	animation: gymvisibility 10s 0.35s forwards;
-}
-
-#third{
-	animation: gymvisibility 10s 0.7s forwards;
-}
-
-#fourth{
-	animation: gymvisibility 10s 1s forwards;
-}
-
-#gymman2{
-	animation:gymmove 10s steps(4,end) forwards;
-}
-*/
 
 @keyframes carmoving_horizontal {
 	0% {transform :translateX(0px);}
@@ -301,3 +89,94 @@ svg {
 	animation: woman_up 10s forwards;
 }
 
+
+@keyframes fade_in {
+	from { 
+		opacity:0;
+		visibility:hidden;
+	 }
+	to {
+		opacity:1;
+		visibility:visible;
+	}
+}
+
+@keyframes glass_appear {
+	from {
+		transform :scale(0.01) ;
+		opacity:0;
+		visibility:hidden;
+	}
+	to {
+		transform:scale(1.2) ;
+		opacity:1;
+		visibility:visible;
+	}
+}
+
+#glass00, #glass01,#glass02,#glass03,#glass04,#glass05,#glass06,#glass07,#glass08,#glass09{
+		opacity:0;
+		visibility:hidden;
+}
+
+#glass00.appear{
+    opacity:1;
+	visibility:visible;
+	transform-origin:center center;
+  	animation:glass_appear 0.25s  cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
+
+#glass01.appear{
+
+	transform-origin:center center;
+  	animation:glass_appear 0.25s  cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
+
+
+#glass02.appear{
+
+	transform-origin:center center;
+  	animation:glass_appear 0.25s  cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
+
+ #glass03.appear{
+
+	transform-origin:center center;
+  	animation:glass_appear 0.25s  cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
+
+ #glass04.appear{
+
+	transform-origin:center center;
+  	animation:glass_appear 0.25s   cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
+
+  #glass05.appear{
+
+	transform-origin:center center;
+  	animation:glass_appear 0.25s  cubic-bezier(.17,.89,.32,2.5) forwards;
+  } 
+
+  #glass06.appear{
+
+	transform-origin:center center;
+  	animation:glass_appear 0.25s  cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
+
+  #glass07.appear{
+
+	transform-origin:center center;
+  	animation:glass_appear 0.25s   cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
+
+  #glass08.appear{
+
+	transform-origin:center center;
+  	animation:glass_appear 0.25s  cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
+
+  #glass09.appear{
+
+	transform-origin:center center;
+  	animation:glass_appear 0.25s cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
