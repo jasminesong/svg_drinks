@@ -8,10 +8,10 @@ body {
 	transform-origin:center center;
 }*/
 
-#roads {
+/*#roads {
 	transform-origin: center center;
 	transform: scale(.8) translateX(-10);
-}
+}*/
 .juice_disappear {
 	display:none;
 }
@@ -281,4 +281,23 @@ svg {
 }
 
 
+#people {
+	display:none;
+	position:absolute;
+	height:500px;
+	width:500px;
+	background-color: yellow;
+	bottom:-200px;
+	left:28%;
+	height:500px;
+	z-index:11;
+}
+@keyframes woman_up {
+	from { transform :translate(0); }
+	to{ transform:translate(0px,-200px); }
+}
+#people.active {
+	display:block;
+	animation: woman_up 10s forwards;
+}
 

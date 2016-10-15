@@ -49,7 +49,9 @@ var pathObj = {
  $(document).ready(function(){ 
 console.log('begin');
 
- $('#people').lazylinepainter( 
+
+$('#btn4').on('click',function(){
+    $('#people').lazylinepainter( 
  {
     "svgData": pathObj,
     "strokeWidth": 2,
@@ -93,8 +95,9 @@ function setProgress (percentage) {
   document.getElementById('grad').setAttribute('y1', (100 - percentage) + '%');
 }
 
-var x = 0;
 
+//start fill woman
+var x = 0;
 
 $('#btn').on('click',function(){
     var timer = setInterval(function(){ 
@@ -107,6 +110,11 @@ $('#btn').on('click',function(){
                           },50);
 
  });
+
+});   //end of btn4 paint
+
+ 
+
 
 
 
@@ -225,7 +233,11 @@ $('#btn3').on('click',function(){
 });
 
 
-
+//pave road 
+$('#btn2').on('click',function(){
+    console.log('click btn2');
+    $('#people').addClass('active');
+});
 
 
 
@@ -235,12 +247,7 @@ $('#btn3').on('click',function(){
 });
 
 
-//pave road 
-// $('#btn2').on('click',function(){
-//     var timer = setInterval(function(){
-//         paveRoad(distance);
-//     },50);
-// });
+
 
 
 
