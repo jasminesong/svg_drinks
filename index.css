@@ -101,18 +101,20 @@ svg {
 	}
 }
 
+
 @keyframes glass_appear {
-	from {
-		transform :scale(0.01) ;
-		opacity:0;
-		visibility:hidden;
-	}
-	to {
-		transform:scale(1.2) ;
-		opacity:1;
-		visibility:visible;
-	}
+      from {
+              transform :scale(0.01) ;
+             opacity:0;
+               visibility:hidden;
+       }
+       to {
+              transform:scale(1.2) ;
+               opacity:1;
+              visibility:visible;
+       }
 }
+
 
 #glass00, #glass01,#glass02,#glass03,#glass04,#glass05,#glass06,#glass07,#glass08,#glass09{
 		opacity:0;
@@ -175,8 +177,30 @@ svg {
   	animation:glass_appear 0.25s  cubic-bezier(.17,.89,.32,2.5) forwards;
   }
 
+  @keyframes run {
+  	from {transform:translate(2000px,35px);}
+  	to {transform:translate(25px,35px);}
+  }
+  @keyframes skew{
+  	from {transform : skewX(60deg);}
+  	to{transform : skewX(0deg);}
+  }
+  
   #glass09.appear{
-
+  	opacity:1;
+	visibility:visible;
 	transform-origin:center center;
-  	animation:glass_appear 0.25s cubic-bezier(.17,.89,.32,2.5) forwards;
+  	animation:run 1s forwards;
+  }
+
+  #glass09.appear #skew_melon {
+  	animation:skew 1s cubic-bezier(.17,.89,.32,2.5) forwards;
+  }
+
+  @keyframes drop{
+  	/*0% {transform: translate(0px,0px);}*/
+  	100% { transform :translate(30px,80px); }
+  }
+  #melon.stop {
+  	animation: drop 0.1s  forwards;
   }

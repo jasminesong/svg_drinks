@@ -63,10 +63,31 @@ setTimeout(addGlass,600,$('#glass05'));
 setTimeout(addGlass,720,$('#glass06'));
 setTimeout(addGlass,840,$('#glass07'));
 setTimeout(addGlass,960,$('#glass08'));
-setTimeout(addGlass,1080,$('#glass09'));
+setTimeout(addGlass,1500,$('#glass09'));
 
+setTimeout(function(){
+    //console.log('stop');
+    $('#melon').attr('class','stop');
+},2600);
 
+// pave road
+setTimeout(function(){
+  
+        console.log('click btn3');
+        var x = 0;
+        var timer = setInterval(function(){
+            if(x >= 10000){
+                clearInterval(timer);
+            }
+            paveRoad1(x);
+            setTimeout(paveRoad3,500,x);
+            setTimeout(paveRoad2,1000,x);
+            setTimeout(paveRoad4,1500,x);
+            
+            x = x + 492.768;
 
+        },30);
+        },3000);
 
 //paint line
 $('#btn4').on('click',function(){
@@ -228,24 +249,24 @@ function paveRoad4(y){
  }
 
 
-$('#btn3').on('click',function(){
+// $('#btn3').on('click',function(){
   
-        console.log('click btn3');
-        var x = 0;
-        var timer = setInterval(function(){
-            if(x >= 10000){
-                clearInterval(timer);
-            }
-            paveRoad1(x);
-            setTimeout(paveRoad3,500,x);
-            setTimeout(paveRoad2,1000,x);
-            setTimeout(paveRoad4,1500,x);
+//         console.log('click btn3');
+//         var x = 0;
+//         var timer = setInterval(function(){
+//             if(x >= 10000){
+//                 clearInterval(timer);
+//             }
+//             paveRoad1(x);
+//             setTimeout(paveRoad3,500,x);
+//             setTimeout(paveRoad2,1000,x);
+//             setTimeout(paveRoad4,1500,x);
             
-            x = x + 492.768;
+//             x = x + 492.768;
 
-        },30);
+//         },30);
         
-});
+// });
 
 
 //pave road 
@@ -253,8 +274,6 @@ $('#btn2').on('click',function(){
     console.log('click btn2');
     $('#people').addClass('active');
 });
-
-
 
 
 
