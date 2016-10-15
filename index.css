@@ -1,9 +1,17 @@
 
 body {
-	background-color :white;
+	background-color :rgb(179, 224, 255);
 }
+/*
+#glasses{
+	transform :translate(-140,0) scale(.5);
+	transform-origin:center center;
+}*/
 
-
+#roads {
+	transform-origin: center center;
+	transform: scale(.8) translateX(-10);
+}
 .juice_disappear {
 	display:none;
 }
@@ -242,12 +250,12 @@ svg {
 
 
 .secondsvg{
-	background-color:yellow;
+	background-color:rgb(179, 224, 255);
 }
 
 
 .secondsvg #mypath {
-    stroke: yellow;
+    stroke: rgb(179, 224, 255);
     stroke-width: .5;
 
     fill:url(#grad);

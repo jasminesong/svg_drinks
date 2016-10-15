@@ -214,9 +214,10 @@ $('#btn3').on('click',function(){
                 clearInterval(timer);
             }
             paveRoad1(x);
-            paveRoad2(x);
-            paveRoad3(x);
-            paveRoad4(x);
+            setTimeout(paveRoad3,500,x);
+            setTimeout(paveRoad2,1000,x);
+            setTimeout(paveRoad4,1500,x);
+            
             x = x + 492.768;
 
         },30);
