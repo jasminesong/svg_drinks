@@ -21,22 +21,6 @@ svg {
 }
 
 
-
-@keyframes carmoving_horizontal {
-	0% {transform :translateX(0px);}
-	40% {transform : translateX(1100PX);}
-}
-
-
-
-
-#car {
-  transform:translateX(0px);
-  transform-origin:center center;  
-  animation: carmoving_horizontal 5s forwards;
-}
-
-
 .secondsvg{
 	background-color:rgb(179, 224, 255);
 }
@@ -204,3 +188,31 @@ svg {
   #melon.stop {
   	animation: drop 0.1s  forwards;
   }
+
+
+
+@keyframes carmoving {
+  0% {transform :translateX(0px);}
+  
+  100% {transform:translate(2000px);}
+}
+
+@keyframes movingback{
+  
+  0% {transform: translateX(0px);}
+  40% {transform:translateX(-1000px);}
+  100% {transform :translateX(-3000px);}
+}
+
+
+#car.moving {
+  transform:translateX(0px);
+  transform-origin:center center;  
+  animation: carmoving 6s forwards;
+}
+
+#plane.moving{
+  transform-origin:center center;  
+  animation: movingback 6s forwards;
+}
+

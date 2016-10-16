@@ -89,6 +89,16 @@ setTimeout(function(){
         },30);
         },3000);
 
+//car moving 
+setTimeout(function(){
+    $('#car').attr('class','moving');
+},5500);//car move 8s
+
+//plane moving
+setTimeout(function(){
+    $('#plane').attr('class','moving');
+},10000);
+
 //paint line
 $('#btn4').on('click',function(){
     $('#people').lazylinepainter( 
