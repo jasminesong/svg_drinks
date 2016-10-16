@@ -19,12 +19,12 @@ svg {
 
 
 .secondsvg{
-	background-color:gold/*rgb(179, 224, 255)*/;
+	background-color:#FFD94C/*rgb(179, 224, 255)*/;
 }
 
 
 .secondsvg #mypath {
-    stroke: gold/*rgb(179, 224, 255)*/;
+    stroke: #FFD94C/*rgb(179, 224, 255)*/;
     stroke-width: .5;
 
     fill:url(#grad);
@@ -40,6 +40,10 @@ svg {
     stop-opacity:1
 }
 
+.thirdsvg {
+  background-color: transparent;
+}
+
 
 #road01,#road02{
   transform :scale(0.22);
@@ -49,13 +53,24 @@ svg {
 	transform:scale(.22);
 }
 
+#text{
+  display:none;
+  position:absolute;
+  height:500px;
+  width:500px;
+  background-color:transparent/* rgb(179, 224, 255)*/;
+  bottom:-300px;
+  /*left:28%;*/
+  height:500px;
+  z-index:12;
+}
 
 #people {
 	display:none;
 	position:absolute;
 	height:500px;
 	width:500px;
-	background-color:gold/* rgb(179, 224, 255)*/;
+	background-color:#FFD94C/* rgb(179, 224, 255)*/;
 	bottom:-200px;
 	left:28%;
 	height:500px;
@@ -63,8 +78,8 @@ svg {
 }
 
 #overlay{
-  background-color: gold/*rgb(179, 224, 255)*/;
-  min-height: 120%
+  background-color: #FFD94C/*rgb(179, 224, 255)*/;
+  min-height: 150%
   opacity : 0;
   visibility:hidden;
   width:100%; 
@@ -83,7 +98,10 @@ svg {
 	display:block;
 	animation: woman_up 1s forwards;
 }
-
+#text.active{
+  display:block;
+  animation: woman_up 1s forwards;
+}
 
 @keyframes fade_in {
 	from { 

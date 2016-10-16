@@ -88,6 +88,8 @@ setTimeout(function(){$('#strawberry_juice').attr('class','disappear');},13400);
 //overlay fadein and paint div slide up
 setTimeout(function(){$('#overlay').attr('class','active');},14500);
 setTimeout(function(){$('#people').attr('class','active');},14500);
+setTimeout(function(){$('#text').attr('class','active');},14500);
+
 
 //paint line
 function paintWoman(){
@@ -103,7 +105,7 @@ function paintWoman(){
  $('svg:last').attr('class','secondsvg');
 
 // add <linearGradient>
-var svg = document.getElementsByTagName('svg')[1]; //Get svg element
+var svg = document.getElementsByTagName('svg')[2]; //Get svg element
 console.log(document.getElementsByTagName('svg').length); //there are 2 svgs
 var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'linearGradient'); //Create  in SVG's namespace
 newElement.setAttribute("id","grad"); 
@@ -137,7 +139,6 @@ function setProgress (percentage) {
 
 //start fill woman
 var x = 0;
-
 setTimeout(function(){
     var timer = setInterval(function(){ 
                           setProgress(x);
@@ -249,11 +250,9 @@ function paveRoad4(y){
  }
 
 
-//pave road 
-$('#btn2').on('click',function(){
-    console.log('click btn2');
-    $('#people').addClass('active');
-});
+//add text
+
+
 
 
 
