@@ -3,9 +3,7 @@ body {
 	background-color :rgb(179, 224, 255);
 }
 
-.juice_disappear {
-	display:none;
-}
+
 
 svg {
 	background-color: rgb(179, 224, 255);
@@ -216,3 +214,7 @@ svg {
   animation: movingback 6s forwards;
 }
 
+
+.disappear{
+  display:none;
+}

@@ -94,10 +94,24 @@ setTimeout(function(){
     $('#car').attr('class','moving');
 },5500);//car move 8s
 
+//first row glass empty
+setTimeout(function(){ $('#grape_juice').attr('class','disappear');},7000);
+setTimeout(function(){$('#cherry_juice').attr('class','disappear');},7100);
+setTimeout(function(){$('#banana_juice').attr('class','disappear');},7200);
+setTimeout(function(){$('#orange_juice').attr('class','disappear');},7300);
+setTimeout(function(){$('#pineapple_juice').attr('class','disappear');},7400);
+
 //plane moving
 setTimeout(function(){
     $('#plane').attr('class','moving');
 },10000);
+
+//second row glass empty
+setTimeout(function(){ $('#watermelon_juice').attr('class','disappear');},13000);
+setTimeout(function(){$('#lemon_juice').attr('class','disappear');},13100);
+setTimeout(function(){$('#carrot_juice').attr('class','disappear');},13200);
+setTimeout(function(){$('#kiwi_juice').attr('class','disappear');},13300);
+setTimeout(function(){$('#strawberry_juice').attr('class','disappear');},13400);
 
 //paint line
 $('#btn4').on('click',function(){
