@@ -19,12 +19,12 @@ svg {
 
 
 .secondsvg{
-	background-color:#FFD94C/*rgb(179, 224, 255)*/;
+	background-color:grey/*#9CC105*//*#FFD94C*//*rgb(179, 224, 255)*/;
 }
 
 
 .secondsvg #mypath {
-    stroke: #FFD94C/*rgb(179, 224, 255)*/;
+    stroke: grey/*#9CC105*//*#FFD94C*//*rgb(179, 224, 255)*/;
     stroke-width: .5;
 
     fill:url(#grad);
@@ -36,7 +36,7 @@ svg {
 }
 
 .color-purple {
-    stop-color:/*#B05BE0;*/ rgb(173, 66, 244);
+    stop-color:/*#B05BE0;*/ /*rgb(173, 66, 244)*//*#9CC105*//*#FF4F0C*/rgb(179, 224, 255);
     stop-opacity:1
 }
 
@@ -70,15 +70,50 @@ svg {
 	position:absolute;
 	height:500px;
 	width:500px;
-	background-color:#FFD94C/* rgb(179, 224, 255)*/;
+	background-color:grey/* rgb(179, 224, 255)*/;
 	bottom:-200px;
 	left:28%;
 	height:500px;
 	z-index:11;
 }
 
+#overlay img:hover{
+  transform:scale(3);
+}
+
+#gmail img{
+  position:absolute;
+  height:30px;
+  width:30px;
+  bottom:53px;
+  right : 190px;
+}
+
+#linkedin img{
+  position:absolute;
+  height:34px;
+  width:34px;
+  bottom:50px;
+  right : 150px;
+}
+
+#github img{
+  position:absolute;
+  height:36px;
+  width:36px;
+  bottom:50px;
+  right : 110px;
+}
+
+#about img{
+  position:absolute;
+  height:27px;
+  width:27px;
+  bottom:55px;
+  right : 76px;
+}
 #overlay{
-  background-color: #FFD94C/*rgb(179, 224, 255)*/;
+  background-color: grey/*#9CC105*//*#FFD94C*//*rgb(179, 224, 255)*/;
   min-height: 150%
   opacity : 0;
   visibility:hidden;
@@ -109,7 +144,7 @@ svg {
 		visibility:hidden;
 	 }
 	to {
-		opacity:.9;
+		opacity:.95;
 		visibility:visible;
 	}
 }
