@@ -85,7 +85,7 @@ svg {
   position:absolute;
   height:30px;
   width:30px;
-  bottom:53px;
+  bottom:93px;
   right : 190px;
 }
 
@@ -93,7 +93,7 @@ svg {
   position:absolute;
   height:34px;
   width:34px;
-  bottom:50px;
+  bottom:90px;
   right : 150px;
 }
 
@@ -101,7 +101,7 @@ svg {
   position:absolute;
   height:36px;
   width:36px;
-  bottom:50px;
+  bottom:90px;
   right : 110px;
 }
 
@@ -109,12 +109,12 @@ svg {
   position:absolute;
   height:27px;
   width:27px;
-  bottom:55px;
+  bottom:95px;
   right : 76px;
 }
 #overlay{
   background-color: grey/*#9CC105*//*#FFD94C*//*rgb(179, 224, 255)*/;
-  min-height: 150%
+  min-height: 680px;
   opacity : 0;
   visibility:hidden;
   width:100%; 
